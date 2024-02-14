@@ -12,8 +12,11 @@ import java.util.Optional;
 @Service
 public class TouristService {
 
-   @Autowired
     private TouristRepository touristRepository;
+
+  public TouristService(TouristRepository touristRepository) {
+      this.touristRepository = touristRepository;
+  }
 
     public List<TouristAttraction> getAttractions() {
         return touristRepository.getAttraction();

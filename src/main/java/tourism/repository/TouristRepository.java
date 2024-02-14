@@ -14,6 +14,8 @@ public class TouristRepository {
         attractions.add(attraction1);
         TouristAttraction attraction2 = new TouristAttraction("Lalandia", "Et feriested med vandland");
         attractions.add(attraction2);
+        TouristAttraction attraction3 = new TouristAttraction("Bakken", "En forlystelsespark");
+        attractions.add(attraction3);
     }
     public List<TouristAttraction> getAttraction() {
         return attractions;
